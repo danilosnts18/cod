@@ -1,0 +1,16 @@
+import javax.swing.JOptionPane;
+public class Main {
+
+    public static void main(String[] args) {
+        String firstNumber = JOpitionPane.showInputDialog ("Digite o preço do primeiro produto");
+        String secondNumber = JOpitionPane.showInputDialog ("Digite o preço do segundo produto");
+
+        int number1 = Integer.parseInt ( firstNumber );
+        int number2 = Integer.parseInt ( secondNumber);
+
+        int sum = number1 + number2;
+
+        JOptionPane.showMessageDialog (null, "A sua compra deu " + sum, " reais totais", JOptionPane.PLAIN_MESSAGE);
+    }
+
+}
